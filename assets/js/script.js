@@ -1,11 +1,16 @@
-const content_box = document.querySelectorAll('.content'),
-    window_height = window.screen.height;
+const content_box = document.querySelectorAll('.content');
+    
+for(let i=0;i<content_box.length;i++){
+    if(content_box[i].offsetTop < window.scrollY + (window.screen.height/1.5)){
+        content_box[i].style.transform="translateX(0)";
+    }
 
+}
 window.onscroll= function(){
     for(let i=0;i<content_box.length;i++){
-    if(content_box[i].offsetTop < window_height){
+    if(content_box[i].offsetTop < window.scrollY + (window.screen.height/1.5)){
         content_box[i].style.transform="translateX(0)";
     }
 }
-
+ 
 }
