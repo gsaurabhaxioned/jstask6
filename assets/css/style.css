@@ -103,47 +103,55 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
 
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
 =================================*/
+main {
+  background-color: #EFEDD6;
+  overflow-x: hidden;
+}
 
+h1 {
+  margin-top: 16px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
 
+h2 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #fff;
+}
 
+.container-box {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
 
+.content {
+  padding: 73px 116px;
+  background-color: #4682B4;
+  transition: all ease-in-out 1s;
+}
 
+.content:nth-child(2n+1){
+  transform: translateX(1000px);
+}
 
-
+.content:nth-child(2n) {
+  transform: translateX(-1000px);
+}
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
