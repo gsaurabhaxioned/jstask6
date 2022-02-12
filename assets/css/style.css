@@ -138,7 +138,11 @@ h2 {
 .content {
   padding: 73px 116px;
   background-color: #4682B4;
-  transition: all ease-in-out 1s;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
 }
 
 .content:nth-child(2n+1){
